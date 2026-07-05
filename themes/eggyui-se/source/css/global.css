@@ -1,25 +1,30 @@
-/* Cascadia Code */
+/* Font: Cascadia Code */
 @import url("https://fontsapi.zeoseven.com/447/main/result.css");
 
-/* Noto Sans CJK */
+/* Font: Noto Sans */
 @import url("https://fontsapi.zeoseven.com/69/main/result.css");
 
-/* Segoe Pro */
+/* Font: Segoe Pro */
 @import url("https://fonts.cdnfonts.com/css/segoe-pro");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+  scrollbar-width: auto;
+  scrollbar-color: #3498db #f8fafc;
 }
 
 body {
-  font-family: 'Segoe Pro Display', 'Segoe UI', 'Noto Sans CJK', 'Microsoft YaHei', Arial, sans-serif;
+  font-family: 'Segoe Pro Display', 'Segoe UI', 'Noto Sans CJK', 'Microsoft YaHei', sans-serif;
+  font-display: swap;
   color: #333;
   background-color: #f8fafc;
   line-height: 1.6;
 }
 
+/* Code Block Styles */
 pre {
   font-family: 'Cascadia Code', monospace;
   background-color: #f0f7ff;
@@ -35,6 +40,7 @@ code {
   border-radius: 4px;
 }
 
+/* Site Styles */
 a {
   text-decoration: none;
   color: #2c3e50;
@@ -149,7 +155,7 @@ a {
 
 .sidebar-section {
   background-color: #fff;
-  padding: 20px;
+  padding: 24px;
   margin-bottom: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
@@ -271,6 +277,20 @@ a {
 .post-body a:hover,
 .page-body a:hover {
   color: #1976d2;
+}
+
+.post-body img,
+.page-body img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.video-iframe {
+  border: none;
+  max-width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 8px;
 }
 
 .pagination {
@@ -481,6 +501,7 @@ a {
   gap: 15px;
 }
 
+/* Button Styles */
 .btn {
   padding: 8px 16px;
   border-radius: 12px;
@@ -514,6 +535,7 @@ a {
   background: linear-gradient(90deg, #e6b67e, #f7aa10);
 }
 
+/* Responsive Styles */
 @media (max-width: 768px) {
   .site-header {
     padding: 12px 16px;
@@ -542,6 +564,10 @@ a {
     width: 100%;
     order: 2;
   }
+
+  .post-item-full {
+    padding: 20px;
+  }
   
   .post-list,
   .post-content,
@@ -560,11 +586,11 @@ a {
   
   .post-content,
   .page-content {
-    padding: 20px 16px;
+    padding: 20px;
   }
   
   .sidebar-section {
-    padding: 16px;
+    padding: 20px;
   }
   
   .footer-content {

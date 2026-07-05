@@ -12,7 +12,11 @@
             <span><%= __('posted_on') %> <%= post.date.format(config.date_format) %></span>
           </div>
           <div class="post-body">
-            <%- post.content %>
+            <% if (post.excerpt){ %>
+                <%= post.excerpt %>
+            <% } else { %>
+                <%= strip_html(post.content).substr(0, theme.excerpt_length || 200) %>...
+            <% } %>
           </div>
         </article>
       <% }) %>

@@ -4,12 +4,12 @@
 
 # Site
 title: EggyUI-SE
-subtitle: '蛋仔风 Windows 美化包'
-description: 'EggyUI-SE 是 EggyUI 分支项目，专注于以不修改系统核心文件的方式实现蛋仔派对风格的 Windows 桌面美化。原 EggyUI 项目仓库已归档为 EggyUI-Legacy。项目在核心设计上做出了重要调整：所有美化内容均通过主题包、壁纸、音效等安全方式部署，而非替换系统关键文件（如 imageres.dll.mun）。'
-keywords: '蛋仔派对Windows美化包, 蛋仔派对Windows主题, EggyUI, EggyUI-RE, EggyUI-SE, OpenEggyUI, Eggix, 蛋仔Win11, 蛋仔派对Win11, EggyUI download, Eggy Party Windows theme, Eggy Party desktop customization, EggyUI legacy, EggyUI archive, Eggy Party美化, Windows 11 Eggy Party, EggyUI components'
-author: AloneVoyager
-language: zh-CN
-timezone: ''
+subtitle: 蛋仔风 Windows 美化包
+description: EggyUI-SE 是 EggyUI 分支项目，专注于以不修改系统核心文件的方式实现蛋仔派对风格的 Windows 桌面美化。原 EggyUI 项目仓库已归档为 EggyUI-Legacy。项目在核心设计上做出了重要调整：所有美化内容均通过主题包、壁纸、音效等安全方式部署，而非替换系统关键文件（如 imageres.dll.mun）。
+keywords: 蛋仔派对Windows美化包,蛋仔派对Windows主题,EggyUI,EggyUI-RE,EggyUI-SE,OpenEggyUI,Eggix,蛋仔Win11,蛋仔派对Win11,EggyUI download,Eggy Party Windows theme,Eggy Party desktop customization,EggyUI legacy,EggyUI archive,Eggy Party美化,Windows 11 Eggy Party,EggyUI components
+author: EggyUI-SE Team
+language: zh-cmn-Hans
+timezone:
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'

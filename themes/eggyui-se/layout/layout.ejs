@@ -3,11 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><%= page.title || config.title %></title>
+  <title><%= `${page.title ? `${page.title} · ` : ''}${config.title} · ${config.subtitle}` %></title>
   <meta name="description" content="<%= page.description || config.description %>">
-  <link rel="stylesheet" href="<%- url_for('css/style.css') %>">
+  <meta name="author" content="<%= config.author %>">
+  <meta name="keywords" content="<%= page.keywords || config.keywords %>">
+  <link rel="stylesheet" href="<%- url_for('css/global.css') %>">
 </head>
 <body>
   <%- body %>
 </body>
-</html
+</html>
